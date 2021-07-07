@@ -1,0 +1,32 @@
+@import '../../base';
+
+.cagetoryBar {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+
+  display: flex;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  scrollbar-width: none;
+
+  span {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    border: 1.5px solid $border-color;
+    border-radius: 999px;
+
+    &:hover {
+      background-color: $border-color;
+    }
+
+    &.active {
+      color: $primary-background;
+      background-color: $border-color;
+    }
+  }
+}

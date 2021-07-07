@@ -1,0 +1,58 @@
+@import '../../base';
+.videoHorizontal {
+  &__left {
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    span {
+      position: absolute;
+      bottom: 0.3rem;
+      right: 1rem;
+      background-color: $primary-text;
+      padding: 0.2rem;
+      color: $secondary-background;
+      border-radius: 3px;
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    h6 {
+      font-size: 15px;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 0.9rem;
+    }
+
+    div > p {
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .videoHorizontal {
+    &__details {
+      img {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../base';
+
+.video {
+  background-color: $secondary-background;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  cursor: pointer;
+
+  &__details {
+    display: flex;
+    // justify-content: space-between;
+  }
+
+  &__details > img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  &__details > div > h4 {
+    font-size: 15px;
+    font-weight: bold;
+    @include line-clamp;
+  }
+
+  &__details > div > p {
+    font-size: 15px;
+    color: $secondary-text;
+    margin-bottom: 1px;
+  }
+
+  &__image {
+    margin-bottom: 0.5rem;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    span {
+      position: absolute;
+      bottom: 0.3rem;
+      right: 0.3rem;
+      padding: 0.2rem;
+      background: $primary-background;
+      border-radius: 3px;
+    }
+  }
+}
