@@ -69,7 +69,7 @@ function VideoHorizontal({ videoDetails, searchScreen }) {
             <p>{snippet?.channelTitle}</p>
             <p>
               <AiFillEye /> {numeral(viewCount).format('0.a').toUpperCase()}{' '}
-              Views • {moment(snippet.publishedAt).fromNow()}
+              Views • {moment(snippet?.publishedAt).fromNow()}
             </p>
           </div>
         </div>
