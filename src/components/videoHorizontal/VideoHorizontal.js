@@ -24,7 +24,6 @@ function VideoHorizontal({ videoDetails, searchScreen }) {
           id: _videoId,
         },
       });
-      console.log(items);
       setViewCount(items[0]?.statistics?.viewCount);
       setDuration(items[0]?.contentDetails?.duration);
     };

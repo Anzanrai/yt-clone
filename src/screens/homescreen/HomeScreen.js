@@ -14,7 +14,6 @@ function HomeScreen() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('Use Effect hook called.');
     dispatch(getPopularVideos());
   }, [dispatch]);
 

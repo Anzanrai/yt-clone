@@ -44,7 +44,6 @@ export const checkSubscriptionStatus = (id) => async (dispatch, getState) => {
         // 'Access-Control-Allow-Origin': '*',
       },
     });
-    console.log(data);
     dispatch({
       type: SET_SUBSCRIPTION_STATUS,
     });
