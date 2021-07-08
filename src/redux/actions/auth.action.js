@@ -45,7 +45,7 @@ export const login = () => async (dispatch) => {
 
 export const logout = () => async (dispatch) => {
   try {
-    const res = await auth.signOut();
+    await auth.signOut();
     dispatch({
       type: LOG_OUT,
       payload: null,
