@@ -33,7 +33,7 @@ export const getChannelDetails = (id) => async (dispatch) => {
 
 export const checkSubscriptionStatus = (id) => async (dispatch, getState) => {
   try {
-    const { data } = await request.get('/subscriptions', {
+    await request.get('/subscriptions', {
       params: {
         part: 'snippet',
         forChannelId: id,
